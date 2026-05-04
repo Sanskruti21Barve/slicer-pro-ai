@@ -1,0 +1,251 @@
+:root {
+  --primary: #0fa4e8;
+  --sidebar: #11b4d3;
+  --accent: #a855f7;
+  --glass: rgba(255, 255, 255, 0.15);
+  --white: #ffffff;
+  --text: #ffffff;
+}
+
+.dark-mode {
+  --primary: #1e293b;
+  --sidebar: #0f172a;
+  --glass: rgba(0, 0, 0, 0.4);
+  --text: #f8fafc;
+}
+
+/* Global Reset */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif; 
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app-container { 
+  display: flex; 
+  min-height: 100vh; 
+  background: var(--primary); 
+  color: var(--text); 
+  transition: background 0.3s ease;
+}
+
+/* SIDEBAR */
+.sidebar { 
+  width: 280px; 
+  background: var(--sidebar); 
+  padding: 30px 20px; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+}
+
+.logo { 
+  font-size: 2rem; 
+  margin-bottom: 40px; 
+  color: #fff !important; 
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.nav-item { 
+  padding: 15px; 
+  margin: 8px 0; 
+  border-radius: 12px; 
+  cursor: pointer; 
+  background: rgba(255,255,255,0.1); 
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-item:hover { 
+  background: rgba(255,255,255,0.2); 
+  transform: translateX(5px);
+}
+
+.nav-item.active { 
+  background: var(--accent); 
+  font-weight: bold; 
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+
+/* MAIN CONTENT AREA */
+.main-content { 
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px; 
+}
+
+.glass-panel { 
+  background: var(--glass); 
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px; 
+  padding: 40px; 
+  width: 100%; 
+  max-width: 850px; 
+  border: 1px solid rgba(255,255,255,0.2); 
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* INPUTS & BUTTONS */
+.input-group { 
+  display: flex; 
+  justify-content: center; 
+  margin: 25px 0; 
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
+}
+
+.main-input { 
+  padding: 18px; 
+  width: 65%; 
+  border-radius: 15px 0 0 15px; 
+  border: none; 
+  outline: none; 
+  font-size: 1rem;
+}
+
+.slice-btn { 
+  padding: 15px 35px; 
+  border: none; 
+  background: var(--accent); 
+  color: white; 
+  font-weight: bold; 
+  border-radius: 0 15px 15px 0; 
+  cursor: pointer; 
+  transition: 0.3s;
+}
+
+.slice-btn:hover { background: #9333ea; }
+.slice-btn:active { transform: scale(0.95); }
+
+/* FILE PICKER */
+.file-section { margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.file-btn { background: white; color: #333; padding: 12px 24px; border-radius: 10px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+.file-btn:hover { background: #f1f5f9; }
+.file-name { font-size: 0.9rem; opacity: 0.9; }
+
+/* RESULTS */
+.scrollable-results {
+  max-height: 280px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.05);
+}
+
+.result-box { 
+  text-align: left; 
+  background: rgba(255,255,255,0.15); 
+  padding: 20px; 
+  border-radius: 15px; 
+  margin-top: 15px; 
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.bulk-item {
+  margin-bottom: 10px;
+  border-left: 5px solid var(--accent);
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+}
+
+/* BADGES */
+.badge { padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; color: #fff; font-weight: bold; text-transform: uppercase; }
+.badge.commercial { background: #ec4899; }
+.badge.educational { background: #3b82f6; }
+.badge.government { background: #10b981; }
+
+/* HISTORY TABLE */
+.action-bar { display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 15px; }
+.export-btn { background: #10b981; color: white; border: none; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+.clear-btn { background: #ef4444; color: white; border: none; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+
+.table-container { max-height: 400px; overflow-y: auto; background: rgba(0,0,0,0.1); border-radius: 15px; }
+.history-table { width: 100%; border-collapse: collapse; }
+.history-table th { background: rgba(0,0,0,0.2); padding: 15px; text-align: left; position: sticky; top: 0; }
+.history-table td { padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+
+/* MEMORY GAME & ANIMATIONS */
+.timer-display { font-size: 1.8rem; font-weight: 800; color: #fbbf24; margin-bottom: 20px; }
+.memory-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 450px; margin: 0 auto; }
+
+.card { height: 90px; position: relative; transform-style: preserve-3d; transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; }
+.card.flipped { transform: rotateY(180deg); }
+.card-face { 
+  position: absolute; width: 100%; height: 100%; backface-visibility: hidden; 
+  display: flex; align-items: center; justify-content: center; border-radius: 15px; font-size: 2rem; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.back { background: var(--accent); color: white; }
+.front { background: white; color: #333; transform: rotateY(180deg); }
+
+/* CELEBRATION EFFECTS */
+.congrats-screen { padding: 30px; }
+.bounce-text {
+  font-size: 3rem;
+  color: #fbbf24;
+  text-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+  animation: bounce 0.8s infinite alternate cubic-bezier(0.5, 0.05, 1, 0.5);
+}
+
+@keyframes bounce {
+  from { transform: scale(1) translateY(0); }
+  to { transform: scale(1.1) translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.restart-btn {
+  margin-top: 25px;
+  padding: 18px 45px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3);
+  transition: 0.3s;
+}
+
+.restart-btn:hover { 
+  transform: scale(1.05); 
+  background: linear-gradient(45deg, #a855f7, #ec4899); 
+}
+/* Add this to your App.css */
+
+.bounce-text {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #ef4444, #f59e0b, #10b981, #f63bda, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: bounce 0.8s infinite alternate, rainbow-shift 3s linear infinite;
+  text-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes rainbow-shift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes bounce {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
