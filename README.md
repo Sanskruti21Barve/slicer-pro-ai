@@ -20,11 +20,44 @@
 To set up the project instantly, copy and paste the following block into your terminal:
 
 ```bash
-git clone [https://github.com/Sanskruti21Barve/slicer-pro-ai](https://github.com/Sanskruti21Barve/slicer-pro-ai)
+1. Clone the Repository
+She should open her terminal (or Command Prompt) and type:
+
+Bash
+git clone https://github.com/Sanskruti21Barve/slicer-pro-ai
 cd slicer-pro-ai
-cd frontend && npm install && npm start &
-cd ../backend && pip install flask && python app.py
-\` \` \`
+Go to the backend folder:
+
+Bash
+cd backend
+Install the Flask web server:
+
+Bash
+pip install flask
+Start the backend server:
+
+Bash
+python app.py
+Keep this terminal window open so the backend stays running.
+ then cd ..
+
+Step 2: Frontend Setup (React)
+Now, she needs to open a new, second terminal window, go to the project folder, and run these:
+
+Go to the frontend folder:
+
+Bash
+    cd frontend
+    ```
+2.  **Install all project dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Launch the interactive UI:**
+    ```bash
+    npm start
+    ```
+
 
 ## 📂 Project Structure
 frontend: The React.js application, including CSS glassmorphism styles and celebration logic.
