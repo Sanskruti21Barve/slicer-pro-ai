@@ -61,7 +61,8 @@ Now, open a new, second terminal window, go to the project folder, and run these
 ```
 
 
-**## 📂 Project Structure**
+## 📂 Project Structure
+
 frontend: The React.js application, including CSS glassmorphism styles and celebration logic.
 
 backend: Python logic for email processing and categorization.
