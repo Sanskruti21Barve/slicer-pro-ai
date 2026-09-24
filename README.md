@@ -21,13 +21,13 @@ To set up the project instantly, copy and paste the following block into your te
 
 Step 1: Backend setup:
 
-1. **Clone the Repository**
+1. Clone the Repository
 ```bash
 Open terminal (or Command Prompt) and type:
 git clone https://github.com/Sanskruti21Barve/slicer-pro-ai
 cd slicer-pro-ai
 ```
-2.** Go to the backend folder:**
+2. Go to the backend folder:
 
 ```bash
 cd backend
@@ -48,28 +48,28 @@ cd ..
 Step 2: Frontend Setup (React)
 Now, open a new, second terminal window, go to the project folder, and run these:
 
-1. **Go to the frontend folder:**
+1. Go to the frontend folder:
 ```bash
     cd frontend
     ```
-2.  **Install all project dependencies:**
+2.  Install all project dependencies:
     ```bash
     npm install
     ```
-3.  **Launch the interactive UI:**
+3.  Launch the interactive UI:
     ```bash
     npm start
     ```
 
 
-****## 📂 Project Structure****
+**## 📂 Project Structure**
 frontend: The React.js application, including CSS glassmorphism styles and celebration logic.
 
 backend: Python logic for email processing and categorization.
 
 node_modules: (Local only) Folder containing your project dependencies.
 
-🚀 How to Use
+##🚀 How to Use
 Slicing: Type an email or upload a .txt file in the Dashboard.
 
 Gaming: Go to the Domain Memory tab and match all pairs to see the balloon burst!
