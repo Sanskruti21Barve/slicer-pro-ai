@@ -63,15 +63,15 @@ Now, open a new, second terminal window, go to the project folder, and run these
 
 ## 📂 Project Structure
 
-frontend: The React.js application, including CSS glassmorphism styles and celebration logic.
+**frontend**: The React.js application, including CSS glassmorphism styles and celebration logic.
 
-backend: Python logic for email processing and categorization.
+**backend**: Python logic for email processing and categorization.
 
-node_modules: (Local only) Folder containing your project dependencies.
+**node_modules**: (Local only) Folder containing your project dependencies.
 
 ## 🚀 How to Use
-Slicing: Type an email or upload a .txt file in the Dashboard.
+**Slicing**: Type an email or upload a .txt file in the Dashboard.
 
-Gaming: Go to the Domain Memory tab and match all pairs to see the balloon burst!
+**Gaming**: Go to the Domain Memory tab and match all pairs to see the balloon burst!
 
-Exporting: Download your results as a CSV from the History tab.
+**Exporting**: Download your results as a CSV from the History tab.
