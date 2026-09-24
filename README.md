@@ -19,34 +19,37 @@
 
 To set up the project instantly, copy and paste the following block into your terminal:
 
+Step 1: Backend setup:
+
+1. **Clone the Repository**
 ```bash
-1. Clone the Repository
-She should open her terminal (or Command Prompt) and type:
-```
-```bash
+Open terminal (or Command Prompt) and type:
 git clone https://github.com/Sanskruti21Barve/slicer-pro-ai
 cd slicer-pro-ai
-Go to the backend folder:
+```
+2.** Go to the backend folder:**
 
-Bash
+```bash
 cd backend
-Install the Flask web server:
-
-Bash
+```
+3.  Install the Flask web server:
+```bash
 pip install flask
-Start the backend server:
-
-Bash
+```
+4. Start the backend server:
+```bash
 python app.py
-Keep this terminal window open so the backend stays running.
- then cd ..
-
+```
+5. Keep this terminal window open so the backend stays running.
+ then
+```bash
+cd ..
+```
 Step 2: Frontend Setup (React)
-Now, she needs to open a new, second terminal window, go to the project folder, and run these:
+Now, open a new, second terminal window, go to the project folder, and run these:
 
-Go to the frontend folder:
-
-Bash
+1. **Go to the frontend folder:**
+```bash
     cd frontend
     ```
 2.  **Install all project dependencies:**
@@ -59,7 +62,7 @@ Bash
     ```
 
 
-**## 📂 Project Structure**
+****## 📂 Project Structure****
 frontend: The React.js application, including CSS glassmorphism styles and celebration logic.
 
 backend: Python logic for email processing and categorization.
