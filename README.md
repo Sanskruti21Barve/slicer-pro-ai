@@ -19,7 +19,7 @@
 
 To set up the project instantly, copy and paste the following block into your terminal:
 
-Step 1: Backend setup:
+**Step 1: Backend setup:**
 
 1. Clone the Repository
 ```bash
@@ -44,7 +44,7 @@ python app.py
 ```bash
 cd ..
 ```
-Step 2: Frontend Setup (React)
+**Step 2: Frontend Setup (React)**
 Now, open a new, second terminal window, go to the project folder, and run these:
 
 1.  Go to the frontend folder:
