@@ -28,7 +28,6 @@ git clone https://github.com/Sanskruti21Barve/slicer-pro-ai
 cd slicer-pro-ai
 ```
 2. Go to the backend folder:
-
 ```bash
 cd backend
 ```
@@ -48,18 +47,18 @@ cd ..
 Step 2: Frontend Setup (React)
 Now, open a new, second terminal window, go to the project folder, and run these:
 
-1. Go to the frontend folder:
+1.  Go to the frontend folder:
 ```bash
     cd frontend
-    ```
+ ```
 2.  Install all project dependencies:
-    ```bash
+```bash
     npm install
-    ```
+```
 3.  Launch the interactive UI:
-    ```bash
+```bash
     npm start
-    ```
+```
 
 
 **## 📂 Project Structure**
@@ -69,7 +68,7 @@ backend: Python logic for email processing and categorization.
 
 node_modules: (Local only) Folder containing your project dependencies.
 
-##🚀 How to Use
+## 🚀 How to Use
 Slicing: Type an email or upload a .txt file in the Dashboard.
 
 Gaming: Go to the Domain Memory tab and match all pairs to see the balloon burst!
