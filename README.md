@@ -22,8 +22,8 @@ To set up the project instantly, copy and paste the following block into your te
 ```bash
 1. Clone the Repository
 She should open her terminal (or Command Prompt) and type:
-
-Bash
+```
+```bash
 git clone https://github.com/Sanskruti21Barve/slicer-pro-ai
 cd slicer-pro-ai
 Go to the backend folder:
